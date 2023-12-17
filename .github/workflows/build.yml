@@ -36,7 +36,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '3.1'
+          dotnet-version: '8.0'
 
       - name: Publish artifact
         run: dotnet publish -c Release -r win10-x64 --self-contained
