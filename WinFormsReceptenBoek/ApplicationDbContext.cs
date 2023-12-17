@@ -25,10 +25,8 @@ namespace WinFormsReceptenBoek
                 entity.Property(e => e.Naam).IsRequired();
                 entity.Property(e => e.Ingrediënten).IsRequired();
                 entity.Property(e => e.Instructies).IsRequired();
-                entity.Property(e => e.ImageLink); // This is where you can configure ImageLink
+                entity.Property(e => e.ImageLink).HasColumnName("ImgurLink"); // Configure ImageLink to map to the existing ImgurLink column
             });
-
-            // Additional configurations for other entities can be added here
         }
     }
 }
