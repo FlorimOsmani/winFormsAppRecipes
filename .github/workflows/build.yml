@@ -1,0 +1,48 @@
+name: Build and Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release
+
+  release:
+    runs-on: windows-latest
+
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1'
+
+      - name: Publish artifact
+        run: dotnet publish -c Release -r win10-x64 --self-contained
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ReceptenApp
+          path: ./bin/Release/netcoreapp3.1/win10-x64/publish
