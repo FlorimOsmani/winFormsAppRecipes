@@ -129,7 +129,7 @@
             Controls.Add(ingrediëntenTextbox);
             Controls.Add(naamTextbox);
             Name = "BewerkReceptForm";
-            Text = "BewerkReceptForm";
+            Text = "Recept bewerken";
             ResumeLayout(false);
             PerformLayout();
         }

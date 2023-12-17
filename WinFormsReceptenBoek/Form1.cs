@@ -139,6 +139,10 @@ namespace WinFormsReceptenBoek
         private void ResetFormulier()
         {
             // Code om de textboxen te legen
+            naamTextbox.Text = "";
+            ingrediëntenTextbox.Text = "";
+            instructiesTextbox.Text = "";
+            imageLinkTextbox.Text = "";
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

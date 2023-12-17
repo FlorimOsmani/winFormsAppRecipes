@@ -42,6 +42,7 @@
             // 
             naamTextbox.Location = new Point(38, 38);
             naamTextbox.Name = "naamTextbox";
+            naamTextbox.ReadOnly = true;
             naamTextbox.Size = new Size(218, 23);
             naamTextbox.TabIndex = 0;
             // 
@@ -49,6 +50,7 @@
             // 
             ingrediëntenTextbox.Location = new Point(38, 99);
             ingrediëntenTextbox.Name = "ingrediëntenTextbox";
+            ingrediëntenTextbox.ReadOnly = true;
             ingrediëntenTextbox.Size = new Size(218, 23);
             ingrediëntenTextbox.TabIndex = 1;
             // 
@@ -57,6 +59,7 @@
             instructiesTextbox.Location = new Point(38, 164);
             instructiesTextbox.Multiline = true;
             instructiesTextbox.Name = "instructiesTextbox";
+            instructiesTextbox.ReadOnly = true;
             instructiesTextbox.Size = new Size(218, 205);
             instructiesTextbox.TabIndex = 2;
             // 
@@ -109,7 +112,7 @@
             Controls.Add(ingrediëntenTextbox);
             Controls.Add(naamTextbox);
             Name = "BekijkReceptForm";
-            Text = "BekijkReceptForm";
+            Text = "Recept bekijken";
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();

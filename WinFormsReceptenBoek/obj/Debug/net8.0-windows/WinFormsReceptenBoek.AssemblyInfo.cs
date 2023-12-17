@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsReceptenBoek")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef83df18c791cc73f5e7a06f0282026264769170")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsReceptenBoek")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsReceptenBoek")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

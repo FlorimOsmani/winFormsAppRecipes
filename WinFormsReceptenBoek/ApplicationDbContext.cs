@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,22 @@ namespace WinFormsReceptenBoek
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=.\Files\ReceptenDatabase.db");
+            if (IsRunningInVisualStudio())
+            {
+                // For development
+                optionsBuilder.UseSqlite(@"Data Source=..\..\..\Files\ReceptenDatabase.db");
+            }
+            else
+            {
+                // For live application
+                optionsBuilder.UseSqlite(@"Data Source=.\Files\ReceptenDatabase.db");
+            }            
+        }
+
+        private bool IsRunningInVisualStudio()
+        {
+            var processName = Process.GetCurrentProcess().ProcessName;
+            return processName.ToLower().Contains("devenv");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
