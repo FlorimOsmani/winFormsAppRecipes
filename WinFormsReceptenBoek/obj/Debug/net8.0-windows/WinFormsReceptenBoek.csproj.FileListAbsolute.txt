@@ -140,3 +140,4 @@ C:\Users\flori\source\repos\WinFormsReceptenBoek\WinFormsReceptenBoek\bin\Debug\
 C:\Users\flori\source\repos\WinFormsReceptenBoek\WinFormsReceptenBoek\bin\Debug\net8.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\flori\source\repos\WinFormsReceptenBoek\WinFormsReceptenBoek\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\flori\source\repos\WinFormsReceptenBoek\WinFormsReceptenBoek\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\flori\source\repos\WinFormsReceptenBoek\WinFormsReceptenBoek\obj\Debug\net8.0-windows\WinFormsReceptenBoek.sourcelink.json
