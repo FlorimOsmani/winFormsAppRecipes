@@ -13,7 +13,7 @@ namespace WinFormsReceptenBoek
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=..\..\..\Files\ReceptenDatabase.db");
+            optionsBuilder.UseSqlite(@"Data Source=.\Files\ReceptenDatabase.db");
         }
     }
 }
