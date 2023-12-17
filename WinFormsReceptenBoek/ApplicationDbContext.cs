@@ -15,5 +15,20 @@ namespace WinFormsReceptenBoek
         {
             optionsBuilder.UseSqlite(@"Data Source=.\Files\ReceptenDatabase.db");
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Configure your entities, relationships, and properties here
+            modelBuilder.Entity<Recept>(entity =>
+            {
+                // Configure properties
+                entity.Property(e => e.Naam).IsRequired();
+                entity.Property(e => e.Ingrediënten).IsRequired();
+                entity.Property(e => e.Instructies).IsRequired();
+                entity.Property(e => e.ImageLink); // This is where you can configure ImageLink
+            });
+
+            // Additional configurations for other entities can be added here
+        }
     }
 }
