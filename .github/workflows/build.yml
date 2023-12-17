@@ -45,4 +45,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ReceptenApp
-          path: ./publish
+          path: |
+            ./publish
+            ./Files/ReceptenDatabase.db
